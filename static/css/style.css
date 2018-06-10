@@ -1,0 +1,43 @@
+html {font-size:100px;margin:0;padding:0;height:100%;}
+/* 750设计稿rem适配 */@media screen and (min-width:0px) and (max-width:320px) {html {font-size:44px;}
+}
+@media screen and (min-width:321px) and (max-width:359px) {html {font-size:46px;}
+}
+@media screen and (min-width:360px) and (max-width:374px) {html {font-size:48px;}
+}
+@media screen and (min-width:375px) and (max-width:383px) {html {font-size:50px;}
+}
+@media screen and (min-width:384px) and (max-width:413px) {html {font-size:54px;}
+}
+@media screen and (min-width:414px) and (max-width:440px) {html {font-size:58px;}
+}
+@media screen and (min-width:441px) and (max-width:600px) {html {font-size:60px;}
+}
+@media screen and (min-width:601px) and (max-width:750px) {html {font-size:64px;}
+}
+@media screen and (min-width:751px) and (max-width:1024px) {html {font-size:68px;}
+}
+@media screen and (min-width:1025px) and (max-width:1280px) {html {font-size:70px;}
+}
+body {background-color:#fff;min-width:320px;height:100%;overflow:hidden;}
+body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,img,select,textarea,input,form,span {padding:0;margin:0;font:0.14rem/100% "Microsoft YaHei","Helvetica Neue",Helvetica,sans-serif,Arial,"tahoma";vertical-align:middle;letter-spacing:normal;-webkit-tap-highlight-color:transparent;}
+li {list-style:none;}
+input,textarea:focus {outline:none;-webkit-tap-highlight-color:transparent;}
+img {border:none;}
+.fl {float:left;}
+.fr {float:right;}
+.clearfix:after {content:"";display:block;visibility:hidden;clear:both;height:0;}
+.clearfix {zoom:1;}
+a {color:#999;text-decoration:none;transition:color 0.3s linear;-webkit-tap-highlight-color:transparent;}
+input::-webkit-input-placeholder {color:#c5c5c5;}
+.scroll-box {overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch;flex:auto; background:#f6f7fb;}
+.scroll-box>div{background:#fff;}
+.scroll-box::-webkit-scrollbar {max-width:5px;}
+.scroll-box::-webkit-scrollbar-thumb {border-radius:10px;background:#abaebf;}
+.scroll-box::-webkit-scrollbar-track {background:#e7e8ef;}
+.inner-box {padding:0.25rem 0.15rem 0.35rem;border-bottom:12px solid #f6f7fb;}
+.list-title {color:#010101;font-size:16px;line-height:1em;padding:0 0 15px 10px;position:relative; display:flex; align-items:center; justify-content:space-between;}
+.list-title:before {content:'';width:3px;height:16px;border-radius:3px;background-color:#ffdc00;position:absolute;top:0;left:0;margin:auto;}
+.list-title .title{color:#010101;font-size:16px;line-height:1em; flex:none;}
+.list-title .update{color:#abaebe; font-size:14px; line-height:1em; flex:none;}
+.loadmore {text-align:center;color:#333;font-size:16px;line-height:1em;background:#f4ce09;background:-webkit-gradient(linear,left top,right top,from(#fee800),to(#f4ce09));background:linear-gradient(to right,#fee800,#f4ce09);padding:12px 0;border-radius:40px;}
