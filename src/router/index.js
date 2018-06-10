@@ -14,7 +14,7 @@ export default new Router({
       name:'home',
       component: Home,
       meta:{
-        title:'6kw游戏盒子-首页'
+        title:'6kw游戏盒子-首页',
       }
     },
     {
@@ -23,7 +23,6 @@ export default new Router({
       component: Newgame,
       meta:{
         title:'6kw游戏盒子-新游推荐',
-        keepAlive: true
       }
     },
     {
@@ -31,7 +30,7 @@ export default new Router({
       name: 'GameDetails',
       component: GameDetails,
       meta:{
-        title:'6kw游戏盒子-游戏详情'
+        title:'6kw游戏盒子-游戏详情',
       }
     },
     {
@@ -39,7 +38,7 @@ export default new Router({
       name:'Ero404',
       component: Ero404, 
       meta:{
-        title:'6kw游戏盒子-404'
+        title:'6kw游戏盒子-404',
       } 
     },
     { path:"*",redirect:'/404'}  
