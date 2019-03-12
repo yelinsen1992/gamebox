@@ -1,5 +1,6 @@
 html {font-size:100px;margin:0;padding:0;height:100%;}
-/* 750设计稿rem适配 */@media screen and (min-width:0px) and (max-width:320px) {html {font-size:44px;}
+/* 750设计稿rem适配 */
+@media screen and (min-width:0px) and (max-width:320px) {html {font-size:44px;}
 }
 @media screen and (min-width:321px) and (max-width:359px) {html {font-size:46px;}
 }
@@ -20,7 +21,7 @@ html {font-size:100px;margin:0;padding:0;height:100%;}
 @media screen and (min-width:1025px) and (max-width:1280px) {html {font-size:70px;}
 }
 body {background-color:#fff;min-width:320px;height:100%;overflow:hidden;}
-body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,img,select,textarea,input,form,span {padding:0;margin:0;font:0.14rem/100% "Microsoft YaHei","Helvetica Neue",Helvetica,sans-serif,Arial,"tahoma";vertical-align:middle;letter-spacing:normal;-webkit-tap-highlight-color:transparent;}
+body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,img,select,textarea,input,form,span{padding:0;margin:0;font:0.14rem/100% "Microsoft YaHei","Helvetica Neue",Helvetica,sans-serif,Arial,"tahoma";vertical-align:middle; letter-spacing:normal; -webkit-tap-highlight-color:transparent; outline:none;}
 li {list-style:none;}
 input,textarea:focus {outline:none;-webkit-tap-highlight-color:transparent;}
 img {border:none;}
@@ -28,7 +29,7 @@ img {border:none;}
 .fr {float:right;}
 .clearfix:after {content:"";display:block;visibility:hidden;clear:both;height:0;}
 .clearfix {zoom:1;}
-a {color:#999;text-decoration:none;transition:color 0.3s linear;-webkit-tap-highlight-color:transparent;}
+a{color:#999;text-decoration:none;transition:color 0.3s linear;}
 input::-webkit-input-placeholder {color:#c5c5c5;}
 .scroll-box {overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch;flex:auto; background:#f6f7fb;}
 .scroll-box>div{background:#fff;}

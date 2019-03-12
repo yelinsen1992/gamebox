@@ -1,6 +1,6 @@
 <template>
     <div class="new-game">
-        <vue-header :headTitle="headTitle"></vue-header>
+        <vue-header v-bind="post"></vue-header>
         <div class="inner-box">
           <div class="list-title">
             <span class="title">新游推荐</span>
@@ -24,7 +24,17 @@ export default {
   name: 'Newgame',
   data(){
     return{
-        headTitle:"新游推荐",
+        post:{
+          headTitle:"新游推荐",
+          likes:10086,
+          isPublished:true,
+          commentIds:[0,1,2,3,4,5],
+          type:"A",
+          author:{
+            name:'叶林森',
+            age:27
+          },
+        },
         NewGameList:[],
     }
   },

@@ -2,6 +2,10 @@
     <div class="header">
         <div class="back"  @click="$router.back(-1)"></div>
         <div class="title">{{headTitle}}</div>
+        <div v-if="type === 'A'">A</div>
+        <div v-else-if="type === 'B'">B</div>
+        <div v-else-if="type === 'C'">C</div>
+        <div v-else>Not A/B/C</div>
     </div>
 </template>
 
@@ -13,7 +17,12 @@ export default {
     }
   },
   props:{
-      headTitle:String,
+    headTitle:String,
+    likes:Number,
+    type:String,
+    isPublished:Boolean,
+    commentIds:Array,
+    author:Object
   },
 }
 </script>

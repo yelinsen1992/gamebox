@@ -15,6 +15,7 @@
     </div>
 </template>
 <script>
+import 'swiper/dist/css/swiper.min.css'
 import Swiper from 'swiper/dist/js/swiper.min.js';
 export default {
   name: 'HomeSwiper',

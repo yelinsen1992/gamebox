@@ -1,27 +1,28 @@
 <template>
   <div id="app">
     <div class="scroll-box">
-      <router-view></router-view>
+      <transition>
+        <router-view></router-view>
+      </transition>
     </div>
     <foot-nav></foot-nav>
-    <loading v-if="loading"></loading>
   </div>
 </template>
 
 <script>
 import FooterNav from './components/FooterNav'
-import Loading from '@/components/Loading'
 
 export default {
   name: 'App',
   data:function(){
     return{
       loading:false,
+      transitionName: '',
     }
   },
   components:{
     "foot-nav":FooterNav,
-    'loading':Loading,
+    // 'loading':Loading,
   }
 }
 </script>

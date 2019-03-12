@@ -1,6 +1,4 @@
 import Vue from 'vue'
-
-import 'swiper/dist/css/swiper.min.css'
 import '../static/css/style.css'
 
 import App from './App'
@@ -10,8 +8,6 @@ import VueAxios from 'vue-axios'
 
 import './mock'
 import 'babel-polyfill'
-// import Toast from './test.js'
-// Vue.use(Toast)
 
 Vue.config.productionTip = false
 Vue.use(VueAxios,axios)
@@ -29,4 +25,9 @@ router.beforeEach((to, from, next) => {
     document.title = to.meta.title;
   }
   next();
-})
+});
+
+// router.prototype.goBack = function () { 
+// 　　this.isBack = true
+// 　　window.history.go(-1)
+// }

@@ -7,11 +7,13 @@
       </div>
       <home-swiper></home-swiper>
       <home-nav></home-nav>
+      <newgame-list></newgame-list>
   </div>
 </template>
 <script>
 import HomeSwiper from '@/components/HomeSwiper'
 import HomeNav from '@/components/HomeNav'
+import NewGameList from '@/components/NewGameList'
 
 export default {
   name: 'Home',
@@ -27,6 +29,7 @@ export default {
   components:{
     'home-swiper':HomeSwiper,
     'home-nav':HomeNav,
+    'newgame-list':NewGameList,
   },
 }
 </script>
